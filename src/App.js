@@ -14,7 +14,13 @@ function App() {
   }, []);
 
   async function handleAddRepository() {
-    // TODO
+    const response = await api.post("/repositories", {
+      title: 'Desafio ReactJS',
+      url: 'https://github.com/pedr0fontoura/conceitos-reactjs',
+      techs: ['React', 'Node.js']
+    });
+
+    setRepositories([...repositories, response.data]);
   }
 
   async function handleRemoveRepository(id) {
