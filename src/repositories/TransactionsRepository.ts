@@ -6,7 +6,7 @@ interface Balance {
   total: number;
 }
 
-interface CreateAppointment {
+interface CreateTransaction {
   title: string;
   value: number;
   type: 'income' | 'outcome';
@@ -49,7 +49,7 @@ class TransactionsRepository {
     return balance;
   }
 
-  public create({ title, value, type }: CreateAppointment): Transaction {
+  public create({ title, value, type }: CreateTransaction): Transaction {
     const transaction = new Transaction({ title, value, type });
 
     this.transactions.push(transaction);
