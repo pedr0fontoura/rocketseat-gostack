@@ -29,18 +29,18 @@ class CreateTransactionService {
       throw new AppError('Insufficient funds');
     }
 
-    const categoryRepository = getRepository(Category);
+    const categoriesRepository = getRepository(Category);
 
-    let transactionCategory = await categoryRepository.findOne({
+    let transactionCategory = await categoriesRepository.findOne({
       where: { title: category },
     });
 
     if (!transactionCategory) {
-      transactionCategory = categoryRepository.create({
+      transactionCategory = categoriesRepository.create({
         title: category,
       });
 
-      await categoryRepository.save(transactionCategory);
+      await categoriesRepository.save(transactionCategory);
     }
 
     const transaction = transactionsRepository.create({
