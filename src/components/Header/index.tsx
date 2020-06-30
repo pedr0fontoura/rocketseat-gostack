@@ -18,10 +18,10 @@ const Header: React.FC<HeaderProps> = ({ size = 'large' }: HeaderProps) => {
       <header>
         <img src={Logo} alt="GoFinances" />
         <nav>
-          <StyledLink to="/" active={pathname === '/'}>
+          <StyledLink to="/" active={pathname === '/' ? 1 : 0}>
             Listagem
           </StyledLink>
-          <StyledLink to="/import" active={pathname === '/import'}>
+          <StyledLink to="/import" active={pathname === '/import' ? 1 : 0}>
             Importar
           </StyledLink>
         </nav>

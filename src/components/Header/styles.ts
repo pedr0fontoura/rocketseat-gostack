@@ -6,7 +6,7 @@ interface ContainerProps {
 }
 
 interface StyledLinkProps {
-  active?: boolean;
+  active: number;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -31,18 +31,18 @@ export const StyledLink = styled(Link)<StyledLinkProps>`
   padding-bottom: 10px;
   border-bottom: 2px solid #5636d3;
 
-  ${({ active }) =>
-    active &&
-    css`
-      border-bottom: 2px solid #ff872c;
-    `}
+  &:hover {
+    opacity: 0.6;
+    border-bottom: 2px solid #ff872c;
+  }
 
   & + a {
     margin-left: 32px;
   }
 
-  &:hover {
-    opacity: 0.6;
-    border-bottom: 2px solid #ff872c;
-  }
+  ${({ active }) =>
+    active &&
+    css`
+      border-bottom: 2px solid #ff872c;
+    `}
 `;
