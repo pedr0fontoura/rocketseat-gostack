@@ -20,6 +20,9 @@ $ cd gostack-fullstack-meetapp
 # Instale as dependências da aplicação
 $ yarn
 
+# Execute a fake API
+$ yarn json-server server.json -p 3333
+
 # Execute o React Native
 $ yarn start
 
