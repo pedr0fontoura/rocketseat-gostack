@@ -12,7 +12,7 @@ O desafio foi entregue no commit [feat: add cart total quantity and price 2628b4
 Para clonar e rodar essa aplicação você vai precisar do [Git](https://git-scm.com), [Node.js v12.18](https://nodejs.org) ou superior e [Yarn v1.21.1](https://yarnpkg.com) ou superior. Da sua linha de comando:
 ```bash
 # Clone esse repositório
-$ git clone [https://github.com/pedr0fontoura/gomarketplace](https://github.com/pedr0fontoura/gomarketplace)
+$ git clone https://github.com/pedr0fontoura/gomarketplace
 
 # Acesse o repositório
 $ cd gostack-fullstack-meetapp
