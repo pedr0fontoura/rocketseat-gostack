@@ -4,14 +4,20 @@
   Desafio 09: Relacionamentos com banco de dados no Node.js
 </h3>
 
-### 🚀 Sobre a aplicação
+<p align="center">
+  <a href="#-sobre-a-aplicação">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-específicação-dos-testes">Especificação dos testes</a>
+</p>
+
+## 🚀 Sobre a aplicação
 Essa aplicação foi desenvolvida para um desafio do Bootcamp GoStack da Rocketseat.
 
 O objetivo do desafio era criar uma aplicação para colocar em prática os conhecimentos em Node.js, TypeScript, banco e dados com TypeORM e relacionamentos ManyToMany adquiridos durante o bootcamp.
 
 O desafio foi entregue no commit [Finish orders module 4de1016](https://github.com/pedr0fontoura/database-relations/commit/4de1016a01dd686bd280e9af0d67e9accc5c8bd4)
 
-### 💻 Como usar
+## 💻 Como usar
 Para clonar e rodar essa aplicação você vai precisar do [Git](https://git-scm.com), [Node.js v12.18](https://nodejs.org) ou superior e [Yarn v1.21.1](https://yarnpkg.com) ou superior. Da sua linha de comando:
 ```bash
 # Clone esse repositório
@@ -28,7 +34,7 @@ $ yarn dev:server
 
 ```
 
-### 🧪 Específicação dos testes
+## 🧪 Específicação dos testes
 Para a conclusão do desafio a aplicação precisava passar por uma série de testes definidos pela equipe da **Rocketseat**
 
 A lista de testes da mesma maneira que no manual do desafio:
@@ -56,7 +62,3 @@ A lista de testes da mesma maneira que no manual do desafio:
 - **`should be able to subtract an product total quantity when it is ordered`**: Para que esse teste passe, sua aplicação deve permitir que, quando um novo pedido for criado, seja alterada a quantidade total dos produtos baseado na quantidade pedida.
 
 - **`should be able to list one specific order`**: Para que esse teste passe, você deve permitir que a rota `orders/:id` retorne um pedido, contendo todas as informações do pedido com o relacionamento de `customer` e `order_products`.
-
-## 📝 Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
