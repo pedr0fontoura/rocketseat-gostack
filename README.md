@@ -1,14 +1,26 @@
-<h3 align="center">GoMarketplace</h3>
-<blockquote align="center">Desafio 08: Fundamentos do React Native</blockquote>
+<img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios-new.png" />
 
-### Sobre a aplicação
+<h3 align="center">
+  Desafio 04: Conceitos do React Native (GoMarketplace)
+</h3>
+
+<p align="center">
+  <a href="#-sobre-a-aplicação">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-específicação-dos-testes">Especificação dos testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-fake-api">Fake API</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-fake-api">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
+
+## 🚀 Sobre a aplicação
 Essa aplicação foi desenvolvida para um desafio do Bootcamp GoStack da Rocketseat.
 
 O objetivo do desafio era aplicar alguns fundamentos de React Native junto com TypeScript, como **utilização de rotas**, **Async Storage** e **Context API**.
 
 O desafio foi entregue no commit [feat: add cart total quantity and price 2628b47](https://github.com/pedr0fontoura/gomarketplace/commit/2628b4738ab754acb75b29812223dd39b848c56b)
 
-### Como usar
+## 💻 Como usar
 Para clonar e rodar essa aplicação você vai precisar do [Git](https://git-scm.com), [Node.js v12.18](https://nodejs.org) ou superior e [Yarn v1.21.1](https://yarnpkg.com) ou superior. Da sua linha de comando:
 ```bash
 # Clone esse repositório
@@ -33,12 +45,12 @@ $ yarn android
 $ yarn ios
 ```
 
-### Fake API
+## 🧰 Fake API
 Para simular os dados da aplicação foi criada uma fake API utilizando **json-server**
 
 O arquivo `server.json` contém os dados para uma rota `/products` que retorna uma listagem de produtos.
 
-### Funcionalidades da aplicação
+## ✨ Funcionalidades da aplicação
 - **`Listar os produtos da fake API`**
 - **`Adicionar itens ao carrinho`**
 -  **`Exibir itens do carrinho`**
@@ -46,7 +58,7 @@ O arquivo `server.json` contém os dados para uma rota `/products` que retorna u
 - **`Diminuir quantidade de um item do carrinho`**
 - **`Exibir valor total dos itens no carrinho`**
 
-### Específicação dos testes
+## 🧪 Específicação dos testes
 Para a conclusão do desafio a aplicação precisava passar por uma série de testes definidos pela equipe da **Rocketseat**
 
 A lista de testes da mesma maneira que no manual do desafio:
@@ -76,6 +88,6 @@ A lista de testes da mesma maneira que no manual do desafio:
 
 -   **`should load products from AsyncStorage`**: Para que esse teste passe, no seu arquivo onde contém o contexto do carrinho, você deve permitir que todos os produtos que foram adicionados sejam buscados do AsyncStorage.
 
-## Licença
+## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
