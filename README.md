@@ -15,7 +15,7 @@ Para clonar e rodar essa aplicação você vai precisar do [Git](https://git-scm
 $ git clone https://github.com/pedr0fontoura/gomarketplace
 
 # Acesse o repositório
-$ cd gostack-fullstack-meetapp
+$ cd gomarketplace
 
 # Instale as dependências da aplicação
 $ yarn
